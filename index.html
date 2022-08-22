@@ -33,7 +33,7 @@
         <div class="container m-5 d-flex justify-content-center ">
             <div class="list shadow d-flex flex-column p-5 bg-light ">
                 <h5 class="text-uppercase mb-3 text-center">Email list</h5>
-                <ul class="ps-0 list-unstyled">
+                <ul v-if="emails.length === 10" class="ps-0 list-unstyled">
                     <li  v-for="email in emails">{{ email }}</li>
                 </ul>
             </div>
